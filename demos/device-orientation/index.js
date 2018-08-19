@@ -24,9 +24,7 @@ var controls = viewer.controls();
 controls.registerMethod('deviceOrientation', deviceOrientationControlMethod);
 
 // Create source.
-var source = Marzipano.ImageUrlSource.fromString(
-  "//www.marzipano.net/media/cubemap/{f}.jpg"
-);
+var source = Marzipano.ImageUrlSource.fromString("./img/360.jpg");
 
 // Create geometry.
 var geometry = new Marzipano.CubeGeometry([{ tileSize: 1024, size: 1024 }]);
